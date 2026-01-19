@@ -23,16 +23,16 @@ To accomplish this, I propose adding the following engine-level functions for DL
 
 ```cpp
 // Forces AI units to ignore all objects on a specified team.
-AIIgnoreTeam(int TeamNum)
+AIIgnoreTeam(int TeamNum);
 
 // Removes the ignored team so AI units can engage them again.
-AIUnIgnoreTeam(int TeamNum)
+AIUnIgnoreTeam(int TeamNum);
 
 // Forces a specific AI unit to ignore a specific object.
-AIIgnoreHim(Handle me, Handle him)
+AIIgnoreHim(Handle me, Handle him);
 
 // Removes a specific ignored object from an AI unit.
-AIUnIgnoreHim(Handle me, Handle him)
+AIUnIgnoreHim(Handle me, Handle him);
 ```
 
 These functions are critical to the solution, as they provide a mechanism for AI units to ignore both specific handles and entire teams.
